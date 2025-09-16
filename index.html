@@ -1,54 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sally Zheng — MedTech Leader</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Sally Zheng — MedTech Systems • Biocompatibility • AI</title>
+  <meta name="description" content="Sally Zheng: systems engineering + biocompatibility leadership for Class I–III medical devices and SaMD/SiMD, exploring practical AI to improve development and quality." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💠%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts (safe, fast) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Open Graph (nicer preview when shared) -->
+  <meta property="og:title" content="Sally Zheng — MedTech Systems • Biocompatibility • AI" />
+  <meta property="og:description" content="Systems engineering + biocompatibility leadership for Class I–III devices & SaMD/SiMD; applying AI where it actually helps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOURUSERNAME.github.io/" />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #222;
-      text-align: center;
+    /* ---------- Theme (edit these 4 lines to restyle) ---------- */
+    :root{
+      --bg: #f7f8fa;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #0ea5e9; /* try: #16a34a (sage), #0ea5e9 (teal/sky), #7c3aed (violet) */
     }
-    .hero {
-      padding: 80px 20px;
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0f14; --text:#e5e7eb; --muted:#9ca3af; --accent:#38bdf8; }
+      .card{ background: #0f1520; border-color:#1f2937; }
+      .btn { box-shadow: none; }
     }
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 20px;
+
+    /* ---------- Base ---------- */
+    * { box-sizing: border-box; }
+    html,body { height: 100%; }
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      line-height:1.6;
     }
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    .container{ max-width: 900px; margin: 0 auto; padding: 24px; }
+
+    /* ---------- Hero ---------- */
+    .hero{ padding: 64px 0 32px; text-align:center; }
+    .kicker{ color:var(--accent); font-weight:600; letter-spacing:.06em; text-transform:uppercase; font-size:.9rem; }
+    h1{
+      font-family: "DM Serif Display", serif;
+      font-size: clamp(32px, 4.5vw, 48px);
+      line-height:1.15; margin: 8px 0 16px;
     }
-    .cta a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      background: #0077cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
+    .lead{
+      color:var(--muted); font-size: clamp(16px, 2.2vw, 20px);
+      max-width: 780px; margin: 0 auto 24px;
     }
-    .cta a:hover {
-      background: #005fa3;
+    .cta{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top: 12px; }
+
+    .btn{
+      appearance:none; border:1px solid transparent; border-radius:12px;
+      padding:12px 18px; font-weight:600; text-decoration:none; color:white; background:var(--accent);
+      transition: transform .04s ease, filter .2s ease, background .2s ease;
+      display:inline-flex; align-items:center; gap:8px;
     }
+    .btn:hover{ filter:brightness(0.95); transform: translateY(-1px); }
+    .btn--ghost{
+      background: transparent; color: var(--text); border-color: #cfd6df;
+    }
+    .btn--ghost:hover{ background: rgba(2,132,199,.08); }
+
+    /* ---------- Sections ---------- */
+    .section{ padding: 36px 0; }
+    .card{
+      background:white; border:1px solid #e5e7eb; border-radius:16px; padding:24px;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+    }
+    .section h2{
+      font-size: 22px; margin: 0 0 12px; letter-spacing:.2px;
+    }
+    .list{ margin:0; padding-left: 18px; }
+    .muted{ color: var(--muted); }
+
+    footer{ text-align:center; padding:48px 0; color:var(--muted); font-size:14px; }
+    a{ color: var(--accent); text-underline-offset: 3px; }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>Sally Zheng — Building the Next Generation of Safe, Compliant MedTech</h1>
-    <p>Grounded in systems engineering and biocompatibility, I lead teams to deliver results across Class I–III medical devices and SaMD/SiMD—integrating AI tools to achieve faster timelines, stronger compliance, and lasting patient impact.</p>
-    <div class="cta">
-      <a href="SallyZheng_CV.pdf">Download Resume</a>
-      <a href="https://www.linkedin.com/in/your-link">LinkedIn</a>
-      <a href="mailto:your@email.com">Email Me</a>
-    </div>
-  </div>
+  <main class="container">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="kicker">Systems • Biocompatibility • AI</div>
+      <h1>Sally Zheng — Building the Next Generation of Safe, Compliant MedTech</h1>
+      <p class="lead">
+        Grounded in systems engineering and biocompatibility, I lead teams to deliver results across Class I–III medical devices and SaMD/SiMD—integrating AI tools to achieve faster timelines, stronger compliance, and lasting patient impact.
+      </p>
+      <div class="cta">
+        <!-- Replace the href with your real files/links -->
+        <a class="btn" href="SallyZheng_CV.pdf" download>⬇️ Download Resume</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">in LinkedIn</a>
+        <a class="btn btn--ghost" href="mailto:your@email.com">✉️ Email Me</a>
+      </div>
+    </header>
+
+    <!-- ABOUT (edit text directly) -->
+    <section class="section">
+      <div class="card">
+        <h2>About</h2>
+        <p class="muted">Short, human paragraph here. Example:</p>
+        <p>
+          I’m a systems/biocompatibility lead who enjoys translating complex med-device requirements into clear, buildable plans.
+          I’ve supported Class I–III devices and SaMD/SiMD programs, cleaned up DHFs, and built cross-functional habits that survive audits.
+          I’m curious about practical AI for requirements, test coverage, and document quality.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / WINS -->
+    <section class="section">
+      <div class="card">
+        <h2>Selected Wins</h2>
+        <ul class="list">
+          <li>Rebuilt DHF traceability and cut verification cycle time by 28%; passed audit with 0 major findings.</li>
+          <li>Led risk-based biocompatibility strategy for a Class II device; accelerated submission without re-testing.</li>
+          <li>Mentored 6 new engineers; standardized templates for usability, risk, and requirements reviews.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px">Swap these with your own achievements—short, outcome → how → proof.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a> · LinkedIn: <a href="https://www.linkedin.com/in/your-link">/in/your-link</a></p>
+      </div>
+    </section>
+
+    <footer>© <span id="y"></span> Sally Zheng</footer>
+  </main>
+
+  <script>
+    // auto year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
